@@ -1,3 +1,4 @@
+//将字符串里每个单词的首字母变为大写
 var str = 'today is a happy day'
 function change(){
     var arr = [];
