@@ -1,9 +1,18 @@
-var str="frankly, my dear, I don't give a damn";
-	var arr=str.split(" ");
-	console.log(arr)
-    var b=new Array(i);
-	for (var i=0;i<arr.length;i++){
-    b[i]=arr[i][0].toUpperCase()+arr[i].substring(1);
+var str = 'today is a happy day'
+function change(){
+    var arr = [];
+    var arr1 = [];
+    arr = str.split(' ')
+    for(var i = 0;i<arr.length;i++)
+    {
+        arr1.push(arr[i][0].toUpperCase() + arr[i] . substring(1));
     }
-    str=b.join(" ");
-    console.log(str)
+    str = arr1.toString();
+    for(var i = 0;i<arr.length;i++)
+    {
+        str = str.replace(',',' ')
+    }
+}
+
+change(str)     //'Today Is A Happy Day'
+console.log(str);
