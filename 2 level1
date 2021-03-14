@@ -1,0 +1,9 @@
+//写一个解构赋值语句
+ const user = {
+            name: "John",
+            years: 30
+        };
+        const { name, years } = user;
+        console.log(name);
+        console.log(years);
+        console.log(false);
