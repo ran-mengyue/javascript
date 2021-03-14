@@ -1,0 +1,26 @@
+//现在有一个"动物"对象的构造函数,还有一个"猫"对象的构造函数,写代码实现“猫”继承“动物”。
+①
+function Animal() {
+            this.species = "动物";
+        }
+        function Cat(name, color) {
+            Animal.call(this, name, color);
+            this.name = name;
+            this.color = color;
+        }
+        var cat = new Cat("大毛", "黄色");
+        console.log(cat);
+     
+       ②
+       var Animal = {
+            species: "动物",
+        };
+        var Cat = {};
+        for (var k in Animal) {
+            Animal[k];
+            var value = Animal[k];
+            Cat[k] = value;
+        }
+        Cat.name = "大毛"
+        Cat.color = "黄色";
+        console.log(Cat)
